@@ -16,6 +16,11 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        buildConfigField(
+            type = "String",
+            name = "NOVEL_SECRET",
+            value = ""
+        )
     }
 
     buildTypes {
@@ -36,6 +41,7 @@ android {
     }
     buildFeatures {
         compose = true
+        buildConfig = true
     }
 }
 
@@ -56,4 +62,26 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+
+    // Dependencies
+    // Coil
+    implementation(libs.coil.compose)
+    implementation(libs.coil3.coil.network.okhttp)
+    // Gson
+    implementation(libs.gson)
+    // Retrofit2
+    implementation(libs.retrofit)
+    implementation(libs.converter.gson)
+    // Koin Core
+    implementation(libs.koin.core)
+    implementation(libs.koin.android)
+    implementation(libs.koin.androidx.compose)
+    implementation(libs.koin.core.viewmodel)
+    implementation(libs.koin.compose.viewmodel)
+    // Material3
+    implementation(libs.material3)
+    // Accompanist
+    implementation(libs.accompanist.pager)
+    implementation(libs.accompanist.pager.indicators)
+
 }

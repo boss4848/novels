@@ -1,4 +1,4 @@
-package com.passakorn.novels
+package com.passakorn.novels.presentation
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -13,35 +13,14 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.passakorn.novels.ui.theme.NovelsTheme
 
-class MainActivity : ComponentActivity() {
+class NovelActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
             NovelsTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
-                }
+                NovelRoute()
             }
         }
-    }
-}
-
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    NovelsTheme {
-        Greeting("Android")
     }
 }
