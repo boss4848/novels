@@ -35,8 +35,8 @@ buildConfigField(
 )
 ```
 ## Mobile preview
-![Mobile preview](./video-records/mobile-recording.mp4)
+https://github.com/user-attachments/assets/9ad79433-ea16-4095-bc31-fe08b06548d4
 
 ## Mobile flipped preview
-![Mobile flipped preview](./video-records/mobile-flipped-recording.mp4)
+https://github.com/user-attachments/assets/4397e5ab-8bb2-4b81-9376-673b02732ab9
 
