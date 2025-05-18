@@ -35,5 +35,8 @@ buildConfigField(
 )
 ```
 ## Mobile preview
-Uploading Screen Recording 2568-05-18 at 12.16.17.mov…
+![Mobile preview](./video-records/mobile-recording.mov)
+
+## Mobile flipped preview
+![Mobile flipped preview](./video-records/mobile-flipped-recording.mov)
 
